@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cryptonet_intern_task/static/css/main.26ef6b77.css",
+    "main.js": "/cryptonet_intern_task/static/js/main.c0bbc144.js",
+    "index.html": "/cryptonet_intern_task/index.html",
+    "main.26ef6b77.css.map": "/cryptonet_intern_task/static/css/main.26ef6b77.css.map",
+    "main.c0bbc144.js.map": "/cryptonet_intern_task/static/js/main.c0bbc144.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26ef6b77.css",
+    "static/js/main.c0bbc144.js"
+  ]
+}
