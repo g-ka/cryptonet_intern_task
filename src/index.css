@@ -14,6 +14,16 @@
 
 body {
   background-color: var(--bg);
+  font-family: "Poppins", sans-serif;
+}
+
+.loading_message, .error_message {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.error_message {
+  color: red;
 }
 
 main {
@@ -41,7 +51,6 @@ main {
 .card {
   display: flex;
   flex-direction: column;
-  font-family: "Poppins", sans-serif;
   border-radius: 30px;
   border: 5px solid var(--primary);
   background-color: var(--secondary);

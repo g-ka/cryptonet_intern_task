@@ -8,4 +8,13 @@
 
 body{
   background-color: var(--bg);
+  font-family: 'Poppins', sans-serif;
+}
+
+.loading_message, .error_message{
+  font-size: 2rem;
+  font-weight: 500;
+}
+.error_message{
+  color: red;
 }
