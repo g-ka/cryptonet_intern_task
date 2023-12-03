@@ -1,13 +1,124 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+:root {
+  --primary: #466cb1;
+  --secondary: #e9f5ce;
+  --primary_hover: #6c83ae;
+  --bg: rgb(225, 225, 225);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: var(--bg);
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 3rem;
+  }
+}
+@media only screen and (max-width: 455px) {
+  main {
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 390px) {
+  main {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  border-radius: 30px;
+  border: 5px solid var(--primary);
+  background-color: var(--secondary);
+}
+.card_header {
+  text-align: center;
+  background-color: var(--primary);
+  color: white;
+  text-transform: capitalize;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  font-size: 1.1rem;
+  padding: 0.2rem 0;
+}
+.card_body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 4rem;
+  padding: 2rem 3rem;
+}
+@media only screen and (max-width: 768px) {
+  .card_body {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+}
+.card_body_image {
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 5px solid var(--primary);
+}
+@media only screen and (max-width: 768px) {
+  .card_body_image {
+    width: 170px;
+  }
+}
+.card_body_basic_info {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 768px) {
+  .card_body_basic_info {
+    align-items: center;
+    text-align: center;
+  }
+}
+.card_body_basic_info_name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.card_body_basic_info_gender {
+  font-size: 1.2rem;
+}
+.card_body_basic_info_location {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.card_body_basic_info_email {
+  margin-top: 2rem;
+}
+.card_body_basic_info_email button {
+  padding: 0.6rem 1.5rem;
+  background-color: var(--primary);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: none;
+  text-transform: capitalize;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card_body_basic_info_email button:hover {
+  background-color: var(--primary_hover);
+}
+
+/*# sourceMappingURL=index.css.map */
