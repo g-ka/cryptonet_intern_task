@@ -16,7 +16,6 @@ function App() {
       try
       {
         const response = await axios.get(BASE_URL);
-        console.log(response.data.results[0]);
         set_details(response.data.results[0]);
       }
       catch(err)
